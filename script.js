@@ -2,7 +2,29 @@ const alumnos = [
     { nombre: "Brandon Melgar Barba", fecha: "06/02/1996", salida: 2014, foto: "./img/alumnos2014/BrandonMB.jpeg" },
     { nombre: "Delbireny Arza Gualiany", fecha: "09/04/1997", salida: 2014, foto: "./img/alumnos2014/DelbirenyAG.png" },
     { nombre: "Yammil Zarraga Perez", fecha: "26/02/1997", salida: 2014, foto: "./img/alumnos2014/YammilZP.png" },
-    { nombre: "Ximena Mamani Quispe", fecha: "11/08/1996", salida: 2014, foto: "./img/alumnos2014/XimenaMQ.jpeg" }
+    { nombre: "Ximena Mamani Quispe", fecha: "11/08/1996", salida: 2014, foto: "./img/alumnos2014/XimenaMQ.jpeg" },
+    { nombre: "Lizbeth Maza Semo", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Leonardo Copa Pereira", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Jhon Jairo Rivero Moreno", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Lander Jimenes Rojas", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Jaime Malale Ichu", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Isaias Guardia Quiroga", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Santiago Noza Yuco", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Jimena Roca Tamo", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Yohana Rioja Malala", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Katherine Figueroa Iva", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Fabricio Heredia Cuellar", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Pedro Fernando Conorio Velarde", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Kathleen Flores Mano", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Roberto Duran Mopi", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Damaris Yasmin Rivas San Millan", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Kevin Cujuy Arias", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Eliana Noy Sucubono", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Luis Ruiz Pimental", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Alexandra Teran Herrera", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Raul Suarez Zeballos", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Edelberto Mosua Justiniano", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Lizbeth Maza Semo", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" }
     // ... hasta los 34 alumnos
 ];
 
