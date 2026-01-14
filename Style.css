@@ -1,0 +1,287 @@
+/* ---------------------------------- */
+/* Estilos generales y reset          */
+/* ---------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+/* ---------------------------------- */
+/* Header                             */
+/* ---------------------------------- */
+header {
+    background-color: #e9e6e3;
+    color: #000000;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logoCabeza {
+    width: 80px;
+    /* un poco más pequeño para móviles */
+    height: auto;
+    object-fit: contain;
+}
+
+/* H1 centrado */
+.header-container h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .header-container h1 {
+        font-size: 24px;
+    }
+}
+
+/* ---------------------------------- */
+/* Menú de navegación                 */
+/* ---------------------------------- */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #0066cc;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 5px 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #004080;
+    border-radius: 5px;
+}
+
+/* ---------------------------------- */
+/* Footer                             */
+/* ---------------------------------- */
+footer {
+    background-color: #0066cc;
+    color: #000000;
+    padding: 10px 10px;
+    font-size: 16px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-col p {
+    margin-bottom: 5px;
+}
+
+/* ---------------------------------- */
+/* Contenedor imagen + texto           */
+/* ---------------------------------- */
+.contenedor-imagen-texto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.contenedor-imagen-texto .logo {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.contenedor-imagen-texto .texto h3 {
+    margin-bottom: 5px;
+}
+
+.contenedor-imagen-texto .texto p {
+    margin: 5px 0;
+    text-align: justify;
+}
+
+/* ---------------------------------- */
+/* Main y lista de alumnos            */
+/* ---------------------------------- */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.buscador {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Grilla de alumnos */
+.lista-alumnos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Tarjeta de alumno */
+.contenedor-alumno {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.contenedor-alumno:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    border: 2px solid #b30000;
+}
+
+/* Imagen del alumno */
+.foto-alumno {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background-color: #ddd;
+    /* opcional, para rellenar el espacio vacío */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.contenedor-alumno:hover .foto-alumno {
+    transform: scale(1.05);
+}
+
+/* Hover del nombre */
+.contenedor-alumno h3 {
+    transition: color 0.3s ease;
+}
+
+.contenedor-alumno:hover h3 {
+    color: #b30000;
+}
+
+/* Número en la esquina */
+.numero {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #b30000;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+/* ---------------------------------- */
+/* Media queries para dispositivos     */
+/* ---------------------------------- */
+
+/* Tablets: 2 columnas */
+@media (max-width: 1024px) {
+    .lista-alumnos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Móviles grandes: 1 columna */
+@media (max-width: 600px) {
+    .lista-alumnos {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .foto-alumno {
+        height: 150px;
+    }
+
+    .contenedor-alumno {
+        padding: 10px;
+    }
+
+    .header-container h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        padding: 8px 12px;
+    }
+}
+
+/* Pantallas muy pequeñas: menos de 400px */
+@media (max-width: 400px) {
+    .foto-alumno {
+        height: 120px;
+    }
+
+    .numero {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .header-container h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+}
