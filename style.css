@@ -33,6 +33,23 @@ header {
     /* un poco más pequeño para móviles */
     height: auto;
     object-fit: contain;
+    margin: 5px;
+}
+
+.logoEscudo {
+    width: 80px;
+    /* un poco más pequeño para móviles */
+    height: auto;
+    object-fit: contain;
+    margin: 5px;
+}
+
+/*fuente*/
+@font-face {
+    font-family: 'Lato';
+    src: url(/fonts/Vaseline\ Extra.ttf);
+    font-weight: bold;
+    font-style: bold;
 }
 
 /* H1 centrado */
@@ -41,8 +58,11 @@ header {
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
-    font-size: 32px;
+    font-size: 45px;
     text-align: center;
+    font-family: 'Lato';
+    font-weight: bold;
+    color: brown;
 }
 
 @media (max-width: 600px) {
