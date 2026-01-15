@@ -309,7 +309,7 @@ main {
 @media (max-width: 768px) {
 
     .header-container {
-        flex-direction: column;
+        flex-direction: flex;
         position: static;
         gap: 10px;
     }
@@ -317,7 +317,7 @@ main {
     .logoCabeza,
     .logoEscudo {
         position: static;
-        width: 70px;
+        width: 80px;
         /* reduce tamaño */
     }
 
