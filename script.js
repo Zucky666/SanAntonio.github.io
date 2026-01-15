@@ -2,7 +2,7 @@ const alumnos = [
     { nombre: "Brandon Melgar Barba", fecha: "06/02/1996", salida: 2014, foto: "./img/alumnos2014/BrandonMB.jpeg" },
     { nombre: "Delbireny Arza Gualiany", fecha: "09/04/1997", salida: 2014, foto: "./img/alumnos2014/DelbirenyAG.png" },
     { nombre: "Yammil Zarraga Perez", fecha: "26/02/1997", salida: 2014, foto: "./img/alumnos2014/YammilZP.png" },
-    { nombre: "Ximena Mamani Quispe", fecha: "11/08/1996", salida: 2014, foto: "./img/alumnos2014/XimenaMQ.jpeg" },
+    { nombre: "Ximena Mamani Quispe", fecha: "11/08/1996", salida: 2014, foto: "./img/alumnos2014/XimenaMQ.png" },
     { nombre: "Lizbeth Maza Semo", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Leonardo Copa Pereira", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Jhon Jairo Rivero Moreno", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
@@ -77,5 +77,6 @@ buscador.addEventListener("input", () => {
 
     renderAlumnos(ordenados);
 });
+
 
 
