@@ -200,6 +200,26 @@ main {
     position: relative;
 }
 
+/*INFO ALUMNO*/
+.info-alumno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*foto del pastel*/
+.fecha-nac {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.icono-cumple {
+    width: 22px;
+    height: 22px;
+
+}
+
 .contenedor-alumno:hover {
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
