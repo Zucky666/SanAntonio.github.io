@@ -135,30 +135,133 @@ footer {
 /* ---------------------------------- */
 /* Contenedor imagen + texto           */
 /* ---------------------------------- */
-.contenedor-imagen-texto {
+.publicaciones {
+    max-width: auto;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.letrero-publi {
     display: flex;
-    align-items: center;
-    gap: 15px;
-    background-color: #f7f7f7;
+    justify-content: left;
+    list-style: none;
     padding: 10px;
-    border-radius: 8px;
+    margin: 0;
+    background-color: #ffffff;
     flex-wrap: wrap;
 }
 
-.contenedor-imagen-texto .logo {
-    width: 120px;
-    height: auto;
+.post {
+    display: flex;
+    gap: 20px;
+    background-color: #dfdddd;
+    border: 3px solid #ddd;
+    border-radius: 14px;
+    overflow: hidden;
+    /* 👈 CLAVE para que la imagen respete el radius */
+    margin-bottom: 25px;
+}
+
+.post-img {
+    width: 220px;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.post-img img {
+    width: 100%;
+    /*ancho*/
+    height: 100%;
+    /*alto*/
     object-fit: cover;
-    border-radius: 8px;
+    display: block;
 }
 
-.contenedor-imagen-texto .texto h3 {
-    margin-bottom: 5px;
+/*afiche*/
+.afiche {
+    display: flex;
+    justify-content: center;
+    /* 👈 centra horizontal */
+    margin: 20px 0;
 }
 
-.contenedor-imagen-texto .texto p {
-    margin: 5px 0;
+.afiche img {
+    max-width: 100%;
+    /* 👈 nunca se sale */
+    width: auto;
+    /* 👈 tamaño deseado */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .afiche img {
+        width: 100%;
+        /* ocupa todo en móvil */
+    }
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-content h2 {
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    line-height: 1.6;
+    margin-bottom: 12px;
     text-align: justify;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #e40202;
+}
+
+@media (max-width: 700px) {
+    .post {
+        flex-direction: column;
+    }
+
+    .post-img {
+        width: 100%;
+        height: 200px;
+        padding: 10;
+    }
+
+    .post-content {
+        padding: 15px;
+    }
+}
+
+
+/*------------------------------------*/
+/*--------------MODAL-----------------*/
+/*------------------------------------*/
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.activo {
+    display: flex;
+}
+
+.modal-img {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.img-click {
+    cursor: pointer;
 }
 
 /* ---------------------------------- */
