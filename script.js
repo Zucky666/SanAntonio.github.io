@@ -8,16 +8,16 @@ const alumnos = [
     { nombre: "Jhon Jairo Rivero Moreno", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Lander Jimenes Rojas", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Jaime Malale Ichu", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
-    { nombre: "Isaias Guardia Quiroga", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Isaias Guardia Quiroga", fecha: "19/08/1996", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Santiago Noza Yuco", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
-    { nombre: "Jimena Roca Tamo", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Jimena Roca Tamo", fecha: "15/10/1995", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Yohana Rioja Malala", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Katherine Figueroa Iva", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
-    { nombre: "Fabricio Heredia Cuellar", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Fabricio Heredia Cuellar", fecha: "02/04/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Pedro Fernando Conorio Velarde", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
-    { nombre: "Kathleen Flores Mano", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Kathleen Flores Mano", fecha: "17/02/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Roberto Duran Mopi", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
-    { nombre: "Damaris Yasmin Rivas San Millan", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Damaris Yasmin Rivas San Millan", fecha: "21/09/1996", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Kevin Cujuy Arias", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Eliana Moy Sucubono", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Luis Ruiz Pimental", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
@@ -25,15 +25,15 @@ const alumnos = [
     { nombre: "Raul Suarez Zeballos", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Edelberto Mosua Justiniano", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Yngrid Jimena Romero Vargas", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
-    { nombre: "Henry Raul Hoyos Barboza", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Henry Raul Hoyos Barboza", fecha: "13/12/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Jose Carlos Quinteros Franco", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Yhon Robert Pinto Navarro", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
-    { nombre: "Jose Henry Yuco Mae", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
-    { nombre: "Elva E. Velarde Vaca", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Jose Henry Yuco Mae", fecha: "27/01/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
+    { nombre: "Elva E. Velarde Vaca", fecha: "01/05/1996", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Ayrton Julio Montero Mancilla", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Wilmer A. Claros Mareca", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
     { nombre: "Kenia L. Yuco Taborga", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" },
-    { nombre: "Kelly Fabiola Zambrana Alpire", fecha: "00/00/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" }
+    { nombre: "Kelly Fabiola Zambrana Alpire", fecha: "11/04/1997", salida: 2014, foto: "./img/alumnos2014/incognito.png" }
     // ... hasta los 34 alumnos
 ];
 
@@ -41,7 +41,7 @@ const alumnos = [
 const contenedor = document.getElementById("listaAlumnos");
 //funcion del indice
 function renderAlumnos(lista) {
-    contenedor.innerHTML = ""; //limpia contenedor
+    contenedor.innerHTML = " "; //limpia contenedor
 
     lista.forEach((alumno, index) => {
         const card = document.createElement("article");
@@ -90,4 +90,29 @@ buscador.addEventListener("input", () => {
     renderAlumnos(ordenados);
 });
 
+//FUNCION DEL MODAL
+document.addEventListener("DOMContentLoaded", () => {
 
+    const modal = document.getElementById("modalImg");
+    const imgModal = document.getElementById("imgModal");
+    const cerrar = document.querySelector(".cerrar");
+    const imagenes = document.querySelectorAll(".img-click");
+
+    imagenes.forEach(img => {
+        img.addEventListener("click", () => {
+            modal.classList.add("activo");
+            imgModal.src = img.src;
+        });
+    });
+
+    cerrar.addEventListener("click", () => {
+        modal.classList.remove("activo");
+    });
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            modal.classList.remove("activo");
+        }
+    });
+
+});
